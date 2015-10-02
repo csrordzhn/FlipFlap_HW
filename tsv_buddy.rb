@@ -23,8 +23,9 @@ module TsvBuddy
   def to_tsv
 
     tsv = @data[0].keys.join("\t") + "\n"
-    yaml_data.each do |hash|
+    @data.each do |hash|
       tsv += hash.values.join("\t") + "\n"
   end
   tsv
+end
 end
