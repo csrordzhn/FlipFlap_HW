@@ -1,5 +1,5 @@
 require_relative 'tsv_buddy'
-require 'YAML'
+require 'yaml'
 
 class FlipFlap
   # Do NOT create an initialize method
