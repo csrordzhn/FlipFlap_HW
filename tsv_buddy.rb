@@ -21,11 +21,11 @@ module TsvBuddy
   # to_tsv: converts @data into tsv string
   # returns: String in TSV format
   def to_tsv
-
     tsv = @data[0].keys.join("\t") + "\n"
     @data.each do |hash|
       tsv += hash.values.join("\t") + "\n"
+    end
+    tsv
   end
-  tsv
-end
+  
 end
